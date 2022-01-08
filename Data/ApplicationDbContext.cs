@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using DwayneRazorMovies.Modules;
 
 namespace DwayneRazorMovies.Data
 {
@@ -12,5 +13,6 @@ namespace DwayneRazorMovies.Data
             : base(options)
         {
         }
+        public DbSet<DwayneRazorMovies.Modules.Movies> Movies { get; set; }
     }
 }
