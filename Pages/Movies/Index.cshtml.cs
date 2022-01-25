@@ -19,11 +19,11 @@ namespace DwayneRazorMovies.Pages.Movies
             _context = context;
         }
 
-        public IList<Movies> Movies { get;set; }
+        public IList<_Pages_Movies_Index> Movies { get;set; }
 
         public async Task OnGetAsync()
         {
-            Movies = await _context.Movies.ToListAsync();
+            Movies = (IList<_Pages_Movies_Index>)await _context.Movies.ToListAsync();
         }
     }
 }

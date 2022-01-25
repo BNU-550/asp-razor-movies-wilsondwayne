@@ -16,12 +16,12 @@ namespace DwayneRazorMovies.Modules
         [Key]
         public int ID { get; set; }
 
-        [StringLength(70)]
+        [StringLength(100)]
         public string Title { get; set; }
         
         [DataType(DataType.Date)]
         public DateTime RelaseDate { get; set; }
         public Genres Genre { get; set; }
-               public decimal Price { get; set; }
+        public decimal Price { get; set; }
     }
 }

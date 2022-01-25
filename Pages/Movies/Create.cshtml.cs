@@ -25,7 +25,7 @@ namespace DwayneRazorMovies.Pages.Movies
         }
 
         [BindProperty]
-        public Movies Movies { get; set; }
+        public _Pages_Movies_Index Movies { get; set; }
 
         // To protect from overposting attacks, see https://aka.ms/RazorPagesCRUD
         public async Task<IActionResult> OnPostAsync()
